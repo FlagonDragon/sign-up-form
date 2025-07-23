@@ -1,0 +1,67 @@
+:root {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 0;
+    height: 100%;
+}
+
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0000ff;
+    border: 5px solid black;
+    width: 50%;
+}
+
+#logoBar {
+    height: 100px;
+    background-color: yellow;
+    border: 5px solid black;
+
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: red;
+    border: 5px solid black;
+    width: 50%;
+}
+
+.rightSide div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(229, 218, 129);
+    border: 5px solid black;
+    height: 150px;
+}
+
+#description {
+    border: 5px solid black;
+}
+
+#forms {
+    border: 5px solid black;
+
+}
+
+#submit {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid black;
+
+}
+
+button {
+    height: 30px;
+}
