@@ -9,19 +9,80 @@
 <body>
 
 <div class="leftSide">
+
     <div id="logoBar"></div>
+
 </div>
 
 <div class="rightSide">
+
     <div id="description">
+
         <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p> 
         <p>You <em>know</em> you want to</p>
+
     </div>
-    <div id="forms"></div>
+
+    <div id="formsContainer">
+
+        <div id="callAction">Let's do this!</div>
+
+        <form id="myForm">
+
+            <div id="forms">
+
+                <div id="formsLeft">
+
+                    <div>
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" id="firstName">
+                    </div>
+
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email">
+                    </div>
+
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password">
+                    </div>
+
+                </div>
+
+                <div id="formsRight">
+
+                    <div>
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" id="lastName">
+                    </div>
+
+                    <div>
+                        <label for="phoneNumber">PHONE NUMBER</label>
+                        <input type="tel" id="phoneNumber">
+                    </div>
+
+                    <div>
+                        <label for="confirmPassword">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirmPassword">
+                    </div>
+
+                </div>
+              
+            </div>
+
+        </form>
+
+    </div>
+
     <div id="submit">
-        <button>Create Account</button>
-        <p>Already have an account? Log in</p>
+
+        <button type="submit" form="myForm" value="Create account">Create Account</button>
+
+        <p>Already have an account? <a href="google.com">Log in</a></p>
+
     </div>
+
 </div>
     
     

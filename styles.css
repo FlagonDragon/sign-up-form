@@ -18,7 +18,7 @@ body {
     justify-content: center;
     background-color: #0000ff;
     border: 5px solid black;
-    width: 50%;
+    width: 30%;
 }
 
 #logoBar {
@@ -34,10 +34,10 @@ body {
     justify-content: center;
     background-color: red;
     border: 5px solid black;
-    width: 50%;
+    width: 70%;
 }
 
-.rightSide div {
+.rightSide > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,18 +50,25 @@ body {
     border: 5px solid black;
 }
 
-#forms {
+#formsContainer {
+    display: flex;
+    flex-direction: column;
     border: 5px solid black;
+}
 
+#forms {
+    display: flex;
+    flex-direction: row;
 }
 
 #submit {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border: 5px solid black;
 
 }
 
 button {
     height: 30px;
+    width: 200px;
 }
