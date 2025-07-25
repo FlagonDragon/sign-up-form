@@ -1,6 +1,7 @@
 :root {
     box-sizing: border-box;
     height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
     /* font-size: 1.5rem; */
 }
 
@@ -27,7 +28,7 @@ body {
     background-repeat:no-repeat;
     background-position:center; 
     background-size: cover;
-    width: 500px;
+    width: 774px;
 }
 
 /* #leftBackground {
@@ -42,15 +43,15 @@ body {
     background-color: rgba(0,0,0,0.5);
     font: 48px;
     position: absolute;
-    top: 175px;
-    height: 100px;
+    top: 160px;
+    height: 106px;
     width: 100%;
     z-index: 10;
 }
 
 #odin {
     font-family: 'norse-bold';
-    font-size: 64px;
+    font-size: 67px;
     color: white;
 }
 
@@ -69,21 +70,31 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(229, 218, 129);
+    background-color: lightgray;
     /* border: 5px solid black; */
     padding-left: 30px;
     flex: 1;
     /* height: 220px; */
 }
 
-/* #description {
-    border: 5px solid black;
-} */
+#description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+#description p {
+    padding-right: 100px;
+    margin: 10px;
+}
 
 #formsContainer {
     display: flex;
     flex-direction: column;
-    background-color: bisque;
+    background-color: white;
     /* border: 5px solid black; */
 }
 
@@ -104,12 +115,16 @@ label, input {
 #submit {
     display: flex;
     flex-direction: column;
-    /* border: 5px solid black; */
-
 }
 
 button {
     font-size: 1rem;
     height: 30px;
     width: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
 }
