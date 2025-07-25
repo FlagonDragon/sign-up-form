@@ -1,12 +1,12 @@
 :root {
     box-sizing: border-box;
     height: 100%;
+    /* font-size: 1.5rem; */
 }
 
 body {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
     margin: 0;
     height: 100%;
 }
@@ -17,15 +17,39 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: #0000ff;
-    border: 5px solid black;
-    width: 30%;
+    position: relative;
+    background-image:url(images/leftBackground.jpg);
+    background-repeat:no-repeat;
+    background-position:center; 
+    background-size: cover;
+    width: 500px;
 }
 
-#logoBar {
-    height: 100px;
-    background-color: yellow;
-    border: 5px solid black;
+/* #leftBackground {
+    height: 100%;
+    width: auto;
+} */
 
+#logoBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    font: 48px;
+    position: absolute;
+    top: 175px;
+    height: 100px;
+    width: 100%;
+    z-index: 10;
+}
+
+#odin {
+    font-size: 48px;
+    color: white;
+}
+
+#logo {
+    height: 85%;
 }
 
 .rightSide {
@@ -33,8 +57,6 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: red;
-    border: 5px solid black;
-    width: 70%;
 }
 
 .rightSide > div {
@@ -42,18 +64,21 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: rgb(229, 218, 129);
-    border: 5px solid black;
-    height: 150px;
+    /* border: 5px solid black; */
+    padding-left: 30px;
+    flex: 1;
+    /* height: 220px; */
 }
 
-#description {
+/* #description {
     border: 5px solid black;
-}
+} */
 
 #formsContainer {
     display: flex;
     flex-direction: column;
-    border: 5px solid black;
+    background-color: bisque;
+    /* border: 5px solid black; */
 }
 
 #forms {
@@ -61,14 +86,24 @@ body {
     flex-direction: row;
 }
 
+/* #formsLeft > div, #formsRight > div{
+    display: flex;
+    direction: column;
+} */
+
+label, input {
+    display: flex;
+}
+
 #submit {
     display: flex;
     flex-direction: column;
-    border: 5px solid black;
+    /* border: 5px solid black; */
 
 }
 
 button {
+    font-size: 1rem;
     height: 30px;
     width: 200px;
 }
