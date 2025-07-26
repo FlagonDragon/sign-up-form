@@ -31,11 +31,6 @@ body {
     width: 774px;
 }
 
-/* #leftBackground {
-    height: 100%;
-    width: auto;
-} */
-
 #logoBar {
     display: flex;
     justify-content: center;
@@ -57,6 +52,19 @@ body {
 
 #logo {
     height: 85%;
+}
+
+#credit {
+    font-size: 9.5px;
+    color: lightgray;
+    position: absolute;
+    top: 709px;
+    left: 125px;
+    align-self: center;
+}
+
+span a{
+    color: lightgray;
 }
 
 .rightSide {
@@ -142,7 +150,7 @@ button {
     margin-bottom: 14px;
 }
 
-a {
+p a {
     text-decoration: none;
     color: gray;
     font-weight: bold;
