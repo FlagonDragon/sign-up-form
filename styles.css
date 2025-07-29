@@ -41,6 +41,7 @@ body {
     height: 106px;
     width: 100%;
     z-index: 10;
+    overflow: hidden;
 }
 
 #odin {
@@ -110,6 +111,9 @@ span a{
     display: flex;
     flex-direction: column;
     background-color: white;
+    color: rgb(60, 60, 60);
+    box-shadow: 0 5px 9px -9px black;
+    z-index: 99;
 }
 
 #callAction, #forms {
@@ -128,7 +132,7 @@ span a{
 }
 
 #forms > div > div {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     margin-right: 50px;
 }
 
@@ -140,6 +144,7 @@ label {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     font-size: 9px;
+    letter-spacing: 1px;
     margin-bottom: 1px;
 }
 
@@ -148,6 +153,21 @@ input {
     border-radius: 3px;
     width: 180px;
     height: 17px;
+}
+
+input:focus {
+    outline: none;
+    border: solid 1px #E5E7EB;
+}
+
+input:valid:focus {
+    outline: none;
+    border: solid 1px blue;
+    box-shadow: 1px 1px 5px black;
+}
+
+input:invalid {
+    border: solid 1px red;
 }
 
 
@@ -162,7 +182,7 @@ input {
 }
 
 #submit p {
-    font-size: 13px;
+    font-size: 12.5px;
     margin-left: 10px;
 }
 
