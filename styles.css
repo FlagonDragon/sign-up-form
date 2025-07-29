@@ -21,7 +21,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #0000ff;
     position: relative;
     background-image:url(images/leftBackground.jpg);
     background-repeat:no-repeat;
@@ -71,7 +70,6 @@ span a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: red;
 }
 
 .rightSide > div {
